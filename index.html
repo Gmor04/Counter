@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+</head>
+<style>
+    #counter-div {
+        width: 40%;
+        height: 50vh;
+        border: 1px solid white;
+        box-shadow: 0px 0px 5px blue;
+        /* background-color: brown; */
+
+    }
+    #my-btn{
+        width: 30%;
+        height: 5vh;
+        border-radius: 30px;
+        background-color: blue;
+        border: 1px solid blue;
+        margin-top: 80px;
+        margin-left: 10px;
+        font-size: 20px;
+        color: white;
+    }
+    #result{
+        text-align: center;
+        color: gold;
+        font-size: 50px;
+    }
+
+    .motherdiv {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60vh;
+    }
+    #myinput{
+        width: 50%;
+        height: 5vh;
+        border: 1px solid black;
+        outline: none;
+        border: none;
+    }
+    #my-btnn{
+        width: 20%;
+        height: 6vh;
+        /* border-radius: 30px; */
+        background-color: blueviolet;
+        border: none;
+        font-size: 20px;
+        color: white;
+    }
+    .downnndi{
+        text-align: center;
+        border: 1px solid rgba(0, 0, 0, 0.596);
+    }
+    @media (max-width:450px) {
+        #counter-div {
+        width: 95%;
+        height: 50vh;
+        border: 1px solid white;
+        box-shadow: 0px 0px 5px blue;
+        /* background-color: brown; */
+
+    }
+    #my-btn{
+        width: 25%;
+        height: 5vh;
+        border-radius: 30px;
+        background-color: blue;
+        border: 1px solid blue;
+        margin-top: 80px;
+        margin-left: 13px;
+        font-size: 15px;
+        color: white;
+    }
+        
+    }
+</style>
+
+<body>
+    <div class="motherdiv">
+        <div id="counter-div">
+            <h1 id="result"></h1>
+            <button id="my-btn" onclick="myaddbtn()">ADD</button>
+            <button id="my-btn" onclick="myresetbtn()">RESET</button>
+            <button id="my-btn" onclick="mysubbtn()">SUBSTRAT</button>          
+        </div>
+    </div>
+    <div class="downnndi">
+        <input id="myinput" type="text" value="">
+        <button id="my-btnn" onclick= "displayco()" >display color</button>
+    </div>
+</body>
+
+</html>
+<script src="counter.js"></script>
